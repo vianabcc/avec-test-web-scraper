@@ -22,15 +22,19 @@
 
 To run this project, install the following libraries:
 - [Puppeteer](https://github.com/GoogleChrome/puppeteer)
-- [fs](https://www.npmjs.com/package/fs) 
+- [fs](https://www.npmjs.com/package/fs)
 
 ## Run
 
-To execute this script, run the following command: 
+To execute this script, run the following script:
 
 `npm start`
 
-## Othes 
+or run:
+
+ `node index.js`
+
+## Others
 If you want a different filter to search, include the info in the file *__info-search.js__*
 
 **Example**:
@@ -40,4 +44,4 @@ module.exports = {
   location: 'São Paulo',
 }
 ```
-  The results are available in the directory */response*
+  The results will be available in the directory */response*
