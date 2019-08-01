@@ -18,6 +18,19 @@
   ]
 ```
 
+## Prerequisites
+
+To run this project, install the following libraries:
+- [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+- [fs](https://www.npmjs.com/package/fs) 
+
+## Run
+
+To execute this script, run the following command: 
+
+`npm start`
+
+## Othes 
 If you want a different filter to search, include the info in the file *__info-search.js__*
 
 **Example**:
