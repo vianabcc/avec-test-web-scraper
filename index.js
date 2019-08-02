@@ -83,9 +83,9 @@ const downloadImage  = (url, logo_name ) => new Promise((resolve, reject) =>{
     // Download logo file
     let result = await downloadImage(salonLogoURL, salonName);
     if (result === true){
-        console.log('Success: '+ name + '.png has been downloaded successfully.');
+        console.log('Success: '+ salonName + '.png has been downloaded successfully.');
     }else{
-        console.log('Error: '+ name + '.png was not downloaded.');
+        console.log('Error: '+ salonName + '.png was not downloaded.');
     }
   }
 
