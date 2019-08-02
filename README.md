@@ -22,17 +22,12 @@
 
 To run this project, install the following libraries:
 - [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+- [https](https://nodejs.org/api/https.html)
 - [fs](https://www.npmjs.com/package/fs)
 
 ## Run
 
-To execute this script, run the following script:
-
-`npm start`
-
-or run:
-
- `node index.js`
+To execute this script, run the following script:  `npm start` or run:  `node index.js`
 
 ## Others
 If you want a different filter to search, include the info in the file *__info-search.js__*
@@ -42,6 +37,8 @@ If you want a different filter to search, include the info in the file *__info-s
 module.exports = {
   establishment: 'SALAO_DE_BELEZA',
   location: 'São Paulo',
+  quantity: 30
 }
 ```
-  The results will be available in the directory */response*
+  The data will be available in the directory */response* in a *.json* file. The images downloaded will be in the directory */response/img*.
+
