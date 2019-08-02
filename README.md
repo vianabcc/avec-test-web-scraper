@@ -27,7 +27,9 @@ To run this project, install the following libraries:
 
 ## Run
 
-To execute this script, run the following script:  `npm start` or run:  `node index.js`
+To execute this script, run the following command:  `npm start`
+
+or run:  `node index.js`
 
 ## Others
 If you want a different filter to search, include the info in the file *__info-search.js__*
