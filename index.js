@@ -14,7 +14,7 @@ const LIST_SOLON_LOGO_SELECTOR_CLASS = 'box-image';
 
 // Function to download and save an image on /response/img directory
 const downloadImage  = (url, logo_name ) => new Promise((resolve, reject) =>{
-  const destination = './response/img/'+logo_name;
+  const destination = './response/img/'+logo_name+'.jpg';
   const file = fs.createWriteStream(destination);
   https.get(url, response => {
       response.pipe(file);
@@ -73,7 +73,7 @@ const downloadImage  = (url, logo_name ) => new Promise((resolve, reject) =>{
     // Mounting the JSON object
     data = {
       salao: salonName,
-      logo: salonName+'.png'
+      logo: salonName+'.jpg'
     }
 
     list_data.push(data)
@@ -83,9 +83,9 @@ const downloadImage  = (url, logo_name ) => new Promise((resolve, reject) =>{
     // Download logo file
     let result = await downloadImage(salonLogoURL, salonName);
     if (result === true){
-        console.log('Success: '+ salonName + '.png has been downloaded successfully.');
+        console.log('Success: ', salonName , 'logo has been downloaded successfully.');
     }else{
-        console.log('Error: '+ salonName + '.png was not downloaded.');
+        console.log('Error: ', salonName , 'logo was not downloaded.');
     }
   }
 
