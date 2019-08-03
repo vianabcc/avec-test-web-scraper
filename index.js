@@ -53,7 +53,7 @@ const downloadImage  = (url, logo_name ) => new Promise((resolve, reject) =>{
   }, 2000);
 
   await page.waitForNavigation({ timeout:0 });
-  await page.waitFor(2000)
+  await page.waitFor(5000)
 
   const list_data = []
 
